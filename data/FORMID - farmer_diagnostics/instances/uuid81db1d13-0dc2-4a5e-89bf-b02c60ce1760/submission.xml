@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data encrypted="yes" id="farmer_diagnostics" instanceID="uuid:81db1d13-0dc2-4a5e-89bf-b02c60ce1760" isComplete="true" markedAsCompleteDate="2021-05-16T23:08:44.292Z" submissionDate="2021-05-16T23:08:44.292Z" version="2103241825" xmlns="http://opendatakit.org/submissions">
+  <base64EncryptedKey>hWU+3rO52mWG/B8La/ZhmHNQCP4JpCwoqFQvCDWsfjNX1jS4b1SaAx2geORXgOkbZdFT3k5BPhh6XSs0Qh9Me6deE+8MMPpwGIuXkshNiF1mzz7Wi5TLIYfVysgNLnelhsDAOVjyEioR1dYN2FEt1U4kft/y1n7XZevgYlOFSUiYfYQh92A8HJo5dxPll/f6aZ657cw82KovjsAGNjCr+j29nLSYpOOV90uFGbaXlzU+Xiqnw5iVXyHwzV6GmKxxXa3bprUcNf5E9VGsREGvfbF04nKx+f5BI1Y6RXAUsd2IkSmqz6/DFjcXeORu5WIH3XdoipUnJLVQPjYDDXjIOA==</base64EncryptedKey>
+  <orx:meta xmlns:orx="http://openrosa.org/xforms">
+    <orx:instanceID>uuid:81db1d13-0dc2-4a5e-89bf-b02c60ce1760</orx:instanceID>
+  </orx:meta>
+  <encryptedXmlFile>submission.xml.enc</encryptedXmlFile>
+  <base64EncryptedElementSignature>ZNP6powStR9E2z/Cw1Gm0jKfOLclK2HURpf6I9rntN+ENhILbtb9CTUorO/1bkFb1eS1U7EO3bld4eBCJ8i9BSFHcAcXJIOMztTEvin4ofuY4ehebQHui3RN73MmdLMMWxs/fZJvdNly+6p8tBSHLqgUmxQqgdW3XDz2Hy/VO/8u1fE3MMX9nL2COtdV0AZIH95nwGFWC8WTj6nsnuK22Iu3W1/sedF+wii/H9DtuAWzKGxp8+FJuYdzB0N8rTGIjobI8Z+V3gnUcFahqOnF1X18PX6med2maVGTbpFkA7R244zziGMg7/vC4JM6Wmr2Cc6CVv71Uao2R59tKiQ/+w==</base64EncryptedElementSignature>
+</data>

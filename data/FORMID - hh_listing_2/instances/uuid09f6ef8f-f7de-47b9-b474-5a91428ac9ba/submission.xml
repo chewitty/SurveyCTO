@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="223530" id="hh_listing_2" instanceID="uuid:09f6ef8f-f7de-47b9-b474-5a91428ac9ba" isComplete="true" lastDurationOffset="1480545497269" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2016-12-02T13:31:43.000Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T08:11:51.000Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-02T13:28:00.000Z</starttime>
+  <endtime>2016-12-02T13:31:43.000Z</endtime>
+  <username>eastern_team</username>
+  <duration>223</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Johannah_Moyo</enumerator>
+  <province>Manicaland</province>
+  <district>Mutare</district>
+  <gps_location>-18.846297 32.615019 0.0 0.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Tanyaradzwa Tapiwa</respondent_name>
+    <address>87 Haplatha</address>
+    <num_in_hh>6</num_in_hh>
+    <household_photo/>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:09f6ef8f-f7de-47b9-b474-5a91428ac9ba</instanceID>
+  </meta>
+</hh_listing_2>

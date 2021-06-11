@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 durationMillis="83220" id="hh_listing_2" instanceID="uuid:0ab14c0a-6a06-450e-80ec-c79f794f1d93" isComplete="true" lastDurationOffset="23356753" lastPosition="endOfForm" manifest="{&quot;binaries&quot;:{&quot;1613215245800.jpg&quot;:&quot;\/hh_listing_2\/on_consent[1]\/household_photo[1]&quot;}}" markedAsCompleteDate="2021-02-13T11:21:14.970Z" speedAuditedFields="" submissionDate="2021-02-13T11:21:14.970Z" validated="true" version="1710070852" xmlns="http://opendatakit.org/submissions">
+  <starttime>2021-02-13T12:19:31.891+01</starttime>
+  <endtime>2021-02-13T12:20:55.110+01</endtime>
+  <username>ferdinand.che@gmail.com</username>
+  <duration>83</duration>
+  <enumerator_team>northern</enumerator_team>
+  <enumerator>Billy_Isabella</enumerator>
+  <province>Manicaland</province>
+  <district>Makoni</district>
+  <gps_location>41.6927545 2.4474257 254.8228572926729 17.515</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>DChe </respondent_name>
+    <address>Carrer Antoni Gaudi </address>
+    <num_in_hh>6</num_in_hh>
+    <household_photo>1613215245800.jpg</household_photo>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:0ab14c0a-6a06-450e-80ec-c79f794f1d93</instanceID>
+  </meta>
+</hh_listing_2>

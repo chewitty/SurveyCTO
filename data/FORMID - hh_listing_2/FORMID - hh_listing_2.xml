@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Sample household listing form with sample data</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="english">
+          <text id="static_instance-yesno-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-yesno-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-district-10">
+            <value>Mbire</value>
+          </text>
+          <text id="static_instance-district-11">
+            <value>Mukumbura</value>
+          </text>
+          <text id="static_instance-district-12">
+            <value>Muzarabani</value>
+          </text>
+          <text id="static_instance-district-13">
+            <value>Rushinga</value>
+          </text>
+          <text id="static_instance-district-14">
+            <value>Shamva</value>
+          </text>
+          <text id="static_instance-province-0">
+            <value>Manicaland</value>
+          </text>
+          <text id="static_instance-enumerator-13">
+            <value>Robie Kelvin</value>
+          </text>
+          <text id="static_instance-enumerator-10">
+            <value>Malcolm Tonderai</value>
+          </text>
+          <text id="static_instance-enumerator-11">
+            <value>Clite Tinotenda</value>
+          </text>
+          <text id="static_instance-enumerator-14">
+            <value>Darlington Nyasha</value>
+          </text>
+          <text id="static_instance-enumerator-15">
+            <value>Charles Bill</value>
+          </text>
+          <text id="static_instance-enumerator_team-1">
+            <value>Southern Team</value>
+          </text>
+          <text id="static_instance-enumerator_team-3">
+            <value>Western Team</value>
+          </text>
+          <text id="static_instance-enumerator_team-2">
+            <value>Eastern Team</value>
+          </text>
+          <text id="static_instance-district-8">
+            <value>Guruve</value>
+          </text>
+          <text id="static_instance-district-9">
+            <value>Mazowe</value>
+          </text>
+          <text id="static_instance-district-2">
+            <value>Mutare</value>
+          </text>
+          <text id="static_instance-district-3">
+            <value>Chipinge</value>
+          </text>
+          <text id="static_instance-district-0">
+            <value>Buhera</value>
+          </text>
+          <text id="static_instance-district-1">
+            <value>Chimanimani</value>
+          </text>
+          <text id="static_instance-district-6">
+            <value>Nyanga</value>
+          </text>
+          <text id="static_instance-district-7">
+            <value>Bindura</value>
+          </text>
+          <text id="static_instance-district-4">
+            <value>Makoni</value>
+          </text>
+          <text id="static_instance-district-5">
+            <value>Mutasa</value>
+          </text>
+          <text id="static_instance-enumerator-8">
+            <value>Shawn Mufaro</value>
+          </text>
+          <text id="static_instance-enumerator-9">
+            <value>Aaron Tafadzwa</value>
+          </text>
+          <text id="static_instance-enumerator-0">
+            <value>Precious Rutendo</value>
+          </text>
+          <text id="static_instance-enumerator-1">
+            <value>Rejoice Simelinkosi</value>
+          </text>
+          <text id="static_instance-enumerator-2">
+            <value>Johannah Moyo</value>
+          </text>
+          <text id="static_instance-enumerator-3">
+            <value>Mercy Wadzanai</value>
+          </text>
+          <text id="static_instance-enumerator-4">
+            <value>Flic Moreshah</value>
+          </text>
+          <text id="static_instance-enumerator-5">
+            <value>Tendai Roselin</value>
+          </text>
+          <text id="static_instance-enumerator-6">
+            <value>Billy Isabella</value>
+          </text>
+          <text id="static_instance-enumerator-7">
+            <value>Brian Kimberley</value>
+          </text>
+          <text id="static_instance-enumerator_team-0">
+            <value>Northern Team</value>
+          </text>
+          <text id="static_instance-enumerator-12">
+            <value>Panashe Sydney</value>
+          </text>
+          <text id="static_instance-province-1">
+            <value>Mashonaland Central</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <hh_listing_2 id="hh_listing_2" version="1710070852">
+          <starttime/>
+          <endtime/>
+          <username/>
+          <duration/>
+          <enumerator_team/>
+          <enumerator/>
+          <province/>
+          <district/>
+          <gps_location/>
+          <consent/>
+          <on_consent>
+            <respondent_name/>
+            <address/>
+            <num_in_hh/>
+            <household_photo/>
+          </on_consent>
+          <meta>
+            <instanceID/>
+          </meta>
+        </hh_listing_2>
+      </instance>
+      <instance id="province">
+        <root>
+          <item>
+            <itextId>static_instance-province-0</itextId>
+            <name>Manicaland</name>
+          </item>
+          <item>
+            <itextId>static_instance-province-1</itextId>
+            <name>Mashonaland_Central</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="enumerator">
+        <root>
+          <item>
+            <itextId>static_instance-enumerator-0</itextId>
+            <filter>eastern</filter>
+            <name>Precious_Rutendo</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-1</itextId>
+            <filter>eastern</filter>
+            <name>Rejoice_Simelinkosi</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-2</itextId>
+            <filter>eastern</filter>
+            <name>Johannah_Moyo</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-3</itextId>
+            <filter>eastern</filter>
+            <name>Mercy_Wadzanai</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-4</itextId>
+            <filter>northern</filter>
+            <name>Flic_Moreshah</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-5</itextId>
+            <filter>northern</filter>
+            <name>Tendai_Roselin</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-6</itextId>
+            <filter>northern</filter>
+            <name>Billy_Isabella</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-7</itextId>
+            <filter>northern</filter>
+            <name>Brian_Kimberley</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-8</itextId>
+            <filter>southern</filter>
+            <name>Shawn_Mufaro</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-9</itextId>
+            <filter>southern</filter>
+            <name>Aaron_Tafadzwa</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-10</itextId>
+            <filter>southern</filter>
+            <name>Malcolm_Tonderai</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-11</itextId>
+            <filter>southern</filter>
+            <name>Clite_Tinotenda</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-12</itextId>
+            <filter>western</filter>
+            <name>Panashe_Sydney</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-13</itextId>
+            <filter>western</filter>
+            <name>Robie_Kelvin</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-14</itextId>
+            <filter>western</filter>
+            <name>Darlington_Nyasha</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator-15</itextId>
+            <filter>western</filter>
+            <name>Charles_Bill</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yesno">
+        <root>
+          <item>
+            <itextId>static_instance-yesno-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-yesno-1</itextId>
+            <name>0</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="district">
+        <root>
+          <item>
+            <itextId>static_instance-district-0</itextId>
+            <filter>Manicaland</filter>
+            <name>Buhera</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-1</itextId>
+            <filter>Manicaland</filter>
+            <name>Chimanimani</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-2</itextId>
+            <filter>Manicaland</filter>
+            <name>Mutare</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-3</itextId>
+            <filter>Manicaland</filter>
+            <name>Chipinge</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-4</itextId>
+            <filter>Manicaland</filter>
+            <name>Makoni</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-5</itextId>
+            <filter>Manicaland</filter>
+            <name>Mutasa</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-6</itextId>
+            <filter>Manicaland</filter>
+            <name>Nyanga</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-7</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Bindura</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-8</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Guruve</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-9</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Mazowe</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-10</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Mbire</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-11</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Mukumbura</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-12</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Muzarabani</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-13</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Rushinga</name>
+          </item>
+          <item>
+            <itextId>static_instance-district-14</itextId>
+            <filter>Mashonaland_Central</filter>
+            <name>Shamva</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="enumerator_team">
+        <root>
+          <item>
+            <itextId>static_instance-enumerator_team-0</itextId>
+            <name>northern</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator_team-1</itextId>
+            <name>southern</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator_team-2</itextId>
+            <name>eastern</name>
+          </item>
+          <item>
+            <itextId>static_instance-enumerator_team-3</itextId>
+            <name>western</name>
+          </item>
+        </root>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/hh_listing_2/starttime" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/hh_listing_2/endtime" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="username" nodeset="/hh_listing_2/username" type="string"/>
+      <bind calculate="duration()" nodeset="/hh_listing_2/duration" type="string"/>
+      <bind nodeset="/hh_listing_2/enumerator_team" required="true()" type="select1"/>
+      <bind nodeset="/hh_listing_2/enumerator" required="true()" type="select1"/>
+      <bind nodeset="/hh_listing_2/province" required="true()" type="select1"/>
+      <bind nodeset="/hh_listing_2/district" required="true()" type="select1"/>
+      <bind nodeset="/hh_listing_2/gps_location" required="true()" type="geopoint"/>
+      <bind nodeset="/hh_listing_2/consent" required="true()" type="select1"/>
+      <bind nodeset="/hh_listing_2/on_consent" relevant="selected( /hh_listing_2/consent , '1')"/>
+      <bind nodeset="/hh_listing_2/on_consent/respondent_name" required="true()" type="string"/>
+      <bind nodeset="/hh_listing_2/on_consent/address" required="true()" type="string"/>
+      <bind nodeset="/hh_listing_2/on_consent/num_in_hh" required="true()" type="int"/>
+      <bind nodeset="/hh_listing_2/on_consent/household_photo" required="false()" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/hh_listing_2/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/hh_listing_2/enumerator_team">
+      <label>Welcome to the sample household listing form, meant mostly to provide some sample data for exploration and export. 
+
+ENUMERATOR: Which enumeration team are you on?</label>
+      <item>
+        <label>Northern Team</label>
+        <value>northern</value>
+      </item>
+      <item>
+        <label>Southern Team</label>
+        <value>southern</value>
+      </item>
+      <item>
+        <label>Eastern Team</label>
+        <value>eastern</value>
+      </item>
+      <item>
+        <label>Western Team</label>
+        <value>western</value>
+      </item>
+    </select1>
+    <select1 ref="/hh_listing_2/enumerator">
+      <label>ENUMERATOR: Which enumerator are you?</label>
+      <itemset nodeset="instance('enumerator')/root/item[filter= /hh_listing_2/enumerator_team ]">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select1 ref="/hh_listing_2/province">
+      <label>ENUMERATOR: What province are you in?</label>
+      <item>
+        <label>Manicaland</label>
+        <value>Manicaland</value>
+      </item>
+      <item>
+        <label>Mashonaland Central</label>
+        <value>Mashonaland_Central</value>
+      </item>
+    </select1>
+    <select1 ref="/hh_listing_2/district">
+      <label>ENUMERATOR: What district are you in?</label>
+      <itemset nodeset="instance('district')/root/item[filter= /hh_listing_2/province ]">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <input ref="/hh_listing_2/gps_location">
+      <label>ENUMERATOR: Please record your location.</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <select1 ref="/hh_listing_2/consent">
+      <label>ENUMERATOR: Does an adult in this household give informed consent?</label>
+      <item>
+        <label>Yes</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <group ref="/hh_listing_2/on_consent">
+      <label>Questions if have consent</label>
+      <input ref="/hh_listing_2/on_consent/respondent_name">
+        <label>What is your name?</label>
+      </input>
+      <input ref="/hh_listing_2/on_consent/address">
+        <label>What is your address?</label>
+      </input>
+      <input ref="/hh_listing_2/on_consent/num_in_hh">
+        <label>How many household members do you have?</label>
+      </input>
+      <upload mediatype="image/*" ref="/hh_listing_2/on_consent/household_photo">
+        <label>ENUMERATOR: Please photograph the outside of the household.</label>
+      </upload>
+    </group>
+  </h:body>
+</h:html>

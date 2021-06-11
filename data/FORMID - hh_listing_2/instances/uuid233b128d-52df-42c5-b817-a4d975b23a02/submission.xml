@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="398538" id="hh_listing_2" instanceID="uuid:233b128d-52df-42c5-b817-a4d975b23a02" isComplete="true" lastDurationOffset="1480596198217" lastPosition="endOfForm" manifest="{&quot;binaries&quot;:{&quot;house4-1480596047199.JPG&quot;:&quot;instance(Household listing - round 1)/hh_listing_2/on_consent[1]/household_photo[1]&quot;}}" markedAsCompleteDate="2017-02-04T18:26:03.133Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T13:11:46.944Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-01T12:36:39.679Z</starttime>
+  <endtime>2016-12-01T12:43:17.737Z</endtime>
+  <username>eastern_team</username>
+  <duration>399</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Rejoice_Simelinkosi</enumerator>
+  <province>Manicaland</province>
+  <district>Chimanimani</district>
+  <gps_location>-19.807319493357156 32.85894675459292 0.0 0.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Prosper Nyamuda</respondent_name>
+    <address>23 Tongagara</address>
+    <num_in_hh>3</num_in_hh>
+    <household_photo>house4-1480596047199.JPG</household_photo>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:233b128d-52df-42c5-b817-a4d975b23a02</instanceID>
+  </meta>
+</hh_listing_2>

@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>FIP Phase 1 Test</h:title>
+    <model>
+      <submission action="https://digitalinsights.surveycto.com/submission" base64RsaPublicKey="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvMnZldJ/AA0bGZy7b+qCNi5eHylnEci8GLA5clf086PMWnksm/3/FNDHvffX9zttLewzhMev9sxGjlLPWWSdY+neiVl8d2L/5ekZ+2gvk2/t3aC03XKDV8r+DuLuaIyCnoubEP8eWoLYgpAQYC56C2aqkiPbhfrM/gGB99OQwRAWK9r4h0ju/a7G7n+hg+GybScQcre+s0ox8KUCPKl6Z3YNojLnxxZ28R6neQ2SZcXDW04aA0ZWWOdMoFg2rGEk0c92XkpYCZdPC0ZYPCmECsnTiXUg3jEPRcYS5M7new8eh2om+tQfxGUihPFD4aBtcjYBFV16fqBjPETrBbyp4QIDAQAB" method="form-data-post"/>
+      <itext>
+        <translation lang="french">
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms:label">
+            <value>Recommendations FIP</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_id:label">
+            <value>Sélectionner le producteur</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/end_month:label">
+            <value>Saisissez le mois de fin</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/summary_row_note:label">
+            <value>&lt;p&gt;&lt;strong&gt;<output value=" /fip_phase_1_test/fip_summary/recom_row "/>&lt;/strong&gt;&lt;/p&gt;.
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Plan d'action corrective:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Les résultats de l'enquête sont présentés dans le tableau ci-dessous.
+&lt;p&gt;Début : <output value=" /fip_phase_1_test/fip_summary/start_month_row "/>&lt;br /&gt;Fin : <output value=" /fip_phase_1_test/fip_summary/end_month_row "/>&lt;br /&gt;Budget estimé par hectare : &lt;strong&gt;&lt;span style=&quot;&quot;color : #ff6600 ;&quot;&quot;&gt;<output value=" /fip_phase_1_test/fip_summary/budget_row "/>&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;Budget total pour la plantation : &lt;span style=&quot;&quot;color : #008080 ;&quot;&quot;&gt;&lt;strong&gt;<output value=" /fip_phase_1_test/fip_summary/tot_budget_row "/>&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_signature:hint">
+            <value>La signature de l'agriculteur est considérée comme une indication de l'approbation des recommandations et du budget estimé par l'agriculteur.</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_signature:label">
+            <value>Signature de l'agriculteur</value>
+          </text>
+          <text id="/fip_phase_1_test/total_est_budget:label">
+            <value>&lt;p&gt;&lt;strong&gt;Le grand total du budget estimé est de &lt;span style=&quot;color : #ff0000 ;&quot;&gt;<output value=" /fip_phase_1_test/tot_est_budget_from_recoms "/>&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;.</value>
+          </text>
+          <text id="/fip_phase_1_test/intronote:label">
+            <value>Bienvenue à la phase 1 du FIP</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/community_id:label">
+            <value>Sélectionner la section</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels:label">
+            <value>Niveau géographique</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/start_month:label">
+            <value>Saisissez le mois de départ</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/committed/0:label">
+            <value>Le planteur ne prévoit pas de mettre en œuvre l'action recommandée</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/act_recom:hint">
+            <value>La recommandation pertinente correspondant à l'ID : <output value=" /fip_phase_1_test/farmer_fip/recom_id "/></value></text>
+          <text id="/fip_phase_1_test/farmer_photo:hint">
+            <value>Prendre la photo de l'agriculteur si celui-ci n'a pas été en mesure de fournir une signature.</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/society_id:label">
+            <value>Sélectionner le village</value>
+          </text>
+          <text id="/fip_phase_1_test/enumerator_signature:hint">
+            <value>La signature de l'agent recenseur est également nécessaire pour valider l'exercice.</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/committed:label">
+            <value>Le planteur s'est-il engagé à appliquer les mesures correctives recommandées?</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/act_recom:label">
+            <value>&lt;p&gt;&lt;strong&gt;<output value=" /fip_phase_1_test/farmer_fip/relevant_recom "/>&lt;/strong&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_photo:label">
+            <value>Photographie de l'agriculteur (si l'agriculteur n'a pas fourni de signature)</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_recoms_note:label">
+            <value><output value=" /fip_phase_1_test/farmer_name "/> a <output value=" /fip_phase_1_test/num_recoms "/> recommendation(s): <output value=" /fip_phase_1_test/farmer_recom_ids_list "/></value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/tot_est_budget_header:hint">
+            <value>La recommandation énoncée, le budget estimé et le calendrier de mise en œuvre.</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/country:label">
+            <value>Sélectionner le pays</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_recoms_note:hint">
+            <value>Les recommandations fondamentales et les identifiants d'action corrective pour l'agriculteur</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/district_coop_id:label">
+            <value>Sélectionner la coopérative</value>
+          </text>
+          <text id="/fip_phase_1_test/farm_size:label">
+            <value>Quelle est la superficie de la plantation de <output value=" /fip_phase_1_test/farmer_name "/> (en hectares) ?</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/est_budget:label">
+            <value>Saisissez le budget estimé</value>
+          </text>
+          <text id="/fip_phase_1_test/total_est_budget:hint">
+            <value>Le total général obtenu en additionnant toutes les estimations totales pour chaque recommandation.</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip:label">
+            <value>Agriculteur FIP</value>
+          </text>
+          <text id="/fip_phase_1_test/enumerator_signature:label">
+            <value>Signature de l'agent recenseur</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/committed/1:label">
+            <value>Le planteur accepte de mettre en œuvre l'action recommandée</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary:label">
+            <value>Résumé FIP</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/tot_est_budget_header:label">
+            <value>&lt;p&gt;&lt;strong&gt;Résumé de la recommandation &lt;span style=&quot;color : #ff0000 ;&quot;&gt;<output value=" /fip_phase_1_test/fip_summary/recom_count "/>&lt;/span&gt; de &lt;span style=&quot;color : #ff0000 ;&quot;&gt;<output value=" /fip_phase_1_test/num_recoms "/>&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;.</value>
+          </text>
+        </translation>
+        <translation default="true()" lang="english">
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms:label">
+            <value>FIP Recommendations</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_id:label">
+            <value>Select farmer</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/end_month:label">
+            <value>Enter the ending month</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/summary_row_note:label">
+            <value>&lt;p&gt;&lt;strong&gt;<output value=" /fip_phase_1_test/fip_summary/recom_row "/>&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Corrective Action Plan:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Start: <output value=" /fip_phase_1_test/fip_summary/start_month_row "/>&lt;br /&gt;End: <output value=" /fip_phase_1_test/fip_summary/end_month_row "/>&lt;br /&gt;Estimated budget per acre: &lt;strong&gt;&lt;span style=&quot;color: #ff6600;&quot;&gt;<output value=" /fip_phase_1_test/fip_summary/budget_row "/>&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;Total budget for farm: &lt;span style=&quot;color: #008080;&quot;&gt;&lt;strong&gt;<output value=" /fip_phase_1_test/fip_summary/tot_budget_row "/>&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_signature:hint">
+            <value>The farmer's signature is taken as an indication of the farmer's approval of the recommendations and the estimated budget</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_signature:label">
+            <value>Farmer's signature</value>
+          </text>
+          <text id="/fip_phase_1_test/total_est_budget:label">
+            <value>&lt;p&gt;&lt;strong&gt;The grand total estimated budget is &lt;span style=&quot;color: #ff0000;&quot;&gt;<output value=" /fip_phase_1_test/tot_est_budget_from_recoms "/>&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/fip_phase_1_test/intronote:label">
+            <value>Welcome to the FIP Phase 1</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/community_id:label">
+            <value>Select Community</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels:label">
+            <value>Geographic Levels</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/start_month:label">
+            <value>Enter the starting month</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/committed/0:label">
+            <value>Farmer does not plan to implement recommended action</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/act_recom:hint">
+            <value>The relevant recommendation matching ID: <output value=" /fip_phase_1_test/farmer_fip/recom_id "/></value></text>
+          <text id="/fip_phase_1_test/farmer_photo:hint">
+            <value>Take the farmer's photo if the farmer has not been able to provide a signature.</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/society_id:label">
+            <value>Select Society</value>
+          </text>
+          <text id="/fip_phase_1_test/enumerator_signature:hint">
+            <value>The enumerator's signature is also needed to validate the exercise.</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/committed:label">
+            <value>Is the farmer committed to recommended corrective action?</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/act_recom:label">
+            <value>&lt;p&gt;&lt;strong&gt;<output value=" /fip_phase_1_test/farmer_fip/relevant_recom "/>&lt;/strong&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_photo:label">
+            <value>Farmer's photograph (if farmer has not provided a signature)</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_recoms_note:label">
+            <value><output value=" /fip_phase_1_test/farmer_name "/> has <output value=" /fip_phase_1_test/num_recoms "/> recommendation(s): <output value=" /fip_phase_1_test/farmer_recom_ids_list "/></value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/tot_est_budget_header:hint">
+            <value>The stated recommendation, the estimated budget, and the implementation timeline.</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/country:label">
+            <value>Select Country</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_recoms_note:hint">
+            <value>The underlying recommendations and corrective action IDs for the farmer</value>
+          </text>
+          <text id="/fip_phase_1_test/geographic_levels/district_coop_id:label">
+            <value>Select the District</value>
+          </text>
+          <text id="/fip_phase_1_test/farm_size:label">
+            <value>What is the size of <output value=" /fip_phase_1_test/farmer_name "/>'s farm (in acres)?</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip/fip_recoms/est_budget:label">
+            <value>Enter the estimated budget</value>
+          </text>
+          <text id="/fip_phase_1_test/total_est_budget:hint">
+            <value>The grand total obtained by adding all the total estimates against each recommendation.</value>
+          </text>
+          <text id="/fip_phase_1_test/farmer_fip:label">
+            <value>Farmer FIP</value>
+          </text>
+          <text id="/fip_phase_1_test/enumerator_signature:label">
+            <value>Enumerator's signature</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/committed/1:label">
+            <value>Farmer accepts to implement recommended action</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary:label">
+            <value>FIP Summary</value>
+          </text>
+          <text id="/fip_phase_1_test/fip_summary/tot_est_budget_header:label">
+            <value>&lt;p&gt;&lt;strong&gt;Summary of recommendation &lt;span style=&quot;color: #ff0000;&quot;&gt;<output value=" /fip_phase_1_test/fip_summary/recom_count "/>&lt;/span&gt; of &lt;span style=&quot;color: #ff0000;&quot;&gt;<output value=" /fip_phase_1_test/num_recoms "/>&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <fip_phase_1_test id="fip_phase_1_test" version="2105211826">
+          <starttime/>
+          <endtime/>
+          <deviceid/>
+          <subscriberid/>
+          <simid/>
+          <devicephonenum/>
+          <username/>
+          <duration/>
+          <caseid/>
+          <intronote/>
+          <geographic_levels>
+            <country_level/>
+            <country/>
+            <district_level/>
+            <district_coop_id/>
+            <community_level/>
+            <district_coop_desc/>
+            <community_desc/>
+            <community_id/>
+            <society_level/>
+            <society_desc/>
+            <society_id/>
+          </geographic_levels>
+          <farmer_id/>
+          <farmer_name/>
+          <farmer_recoms/>
+          <farmer_recom_ids_list/>
+          <num_recoms/>
+          <farmer_recoms_note/>
+          <farmer_fip_count/>
+          <farmer_fip jr:template="">
+            <recom_id/>
+            <recom_column/>
+            <relevant_recom/>
+            <fip_recoms>
+              <act_recom/>
+              <est_budget/>
+              <start_month/>
+              <end_month/>
+            </fip_recoms>
+          </farmer_fip>
+          <farm_size/>
+          <fip_summary_count/>
+          <fip_summary jr:template="">
+            <recom_row/>
+            <budget_row/>
+            <tot_budget_row_unformatted/>
+            <tot_budget_row/>
+            <start_month_row/>
+            <end_month_row/>
+            <recom_count/>
+            <tot_est_budget_header/>
+            <summary_row_note/>
+            <committed>1</committed>
+          </fip_summary>
+          <tot_est_budget_from_recoms/>
+          <total_est_budget/>
+          <farmer_signature/>
+          <farmer_photo/>
+          <enumerator_signature/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </fip_phase_1_test>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/fip_phase_1_test/starttime" publishable="false()" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/fip_phase_1_test/endtime" publishable="false()" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/fip_phase_1_test/deviceid" publishable="false()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/fip_phase_1_test/subscriberid" publishable="false()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/fip_phase_1_test/simid" publishable="false()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/fip_phase_1_test/devicephonenum" publishable="false()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="username" nodeset="/fip_phase_1_test/username" publishable="false()" type="string"/>
+      <bind calculate="duration()" nodeset="/fip_phase_1_test/duration" publishable="false()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="caseid" nodeset="/fip_phase_1_test/caseid" publishable="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/intronote" original="note" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/country_level" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/country" required="true()" type="select1"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/district_level" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/district_coop_id" required="true()" type="select1"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/community_level" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/district_coop_desc" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/community_desc" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/community_id" required="true()" type="select1"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/society_level" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/society_desc" type="string"/>
+      <bind nodeset="/fip_phase_1_test/geographic_levels/society_id" required="true()" type="select1"/>
+      <bind nodeset="/fip_phase_1_test/farmer_id" required="true()" type="select1"/>
+      <bind nodeset="/fip_phase_1_test/farmer_name" type="string"/>
+      <bind calculate="pulldata('farmer_fips', 'recoms', 'ID_key',  /fip_phase_1_test/farmer_id )" nodeset="/fip_phase_1_test/farmer_recoms" type="string"/>
+      <bind calculate="substr( /fip_phase_1_test/farmer_recoms ,1, string-length( /fip_phase_1_test/farmer_recoms )-1)" nodeset="/fip_phase_1_test/farmer_recom_ids_list" type="string"/>
+      <bind calculate="count-items(',',  /fip_phase_1_test/farmer_recom_ids_list )" nodeset="/fip_phase_1_test/num_recoms" type="string"/>
+      <bind nodeset="/fip_phase_1_test/farmer_recoms_note" original="note" readonly="true()" required="false()" type="string"/>
+      <bind calculate=" /fip_phase_1_test/num_recoms " nodeset="/fip_phase_1_test/farmer_fip_count" readonly="true()" type="string"/>
+      <bind calculate="item-at(',',  /fip_phase_1_test/farmer_recom_ids_list , index()-1)" nodeset="/fip_phase_1_test/farmer_fip/recom_id" type="string"/>
+      <bind calculate="if( /fip_phase_1_test/geographic_levels/country =1, 'recommendation_fr', 'recommendation')" nodeset="/fip_phase_1_test/farmer_fip/recom_column" type="string"/>
+      <bind calculate="pulldata('fip_recommendations',  /fip_phase_1_test/farmer_fip/recom_column , 'rid', int( /fip_phase_1_test/farmer_fip/recom_id ))" nodeset="/fip_phase_1_test/farmer_fip/relevant_recom" publishable="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/farmer_fip/fip_recoms/act_recom" original="note" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/farmer_fip/fip_recoms/est_budget" required="true()" type="decimal"/>
+      <bind constraint="date(format-date-time(., '%Y-%m-01')) &gt;= date(format-date-time(today(), '%Y-%m-01'))" jr:constraintMsg="The start month cannot be earlier than the current month" nodeset="/fip_phase_1_test/farmer_fip/fip_recoms/start_month" required="true()" type="date"/>
+      <bind constraint="date(.) &gt;= date( /fip_phase_1_test/farmer_fip/fip_recoms/start_month )" jr:constraintMsg="The end month cannot be earlier than the start month" nodeset="/fip_phase_1_test/farmer_fip/fip_recoms/end_month" required="true()" type="date"/>
+      <bind nodeset="/fip_phase_1_test/farm_size" required="true()" type="decimal"/>
+      <bind calculate=" /fip_phase_1_test/num_recoms " nodeset="/fip_phase_1_test/fip_summary_count" readonly="true()" type="string"/>
+      <bind calculate="indexed-repeat( /fip_phase_1_test/farmer_fip/relevant_recom ,  /fip_phase_1_test/farmer_fip , index())" nodeset="/fip_phase_1_test/fip_summary/recom_row" type="string"/>
+      <bind calculate="format-number(indexed-repeat( /fip_phase_1_test/farmer_fip/fip_recoms/est_budget ,  /fip_phase_1_test/farmer_fip , index()))" nodeset="/fip_phase_1_test/fip_summary/budget_row" type="string"/>
+      <bind calculate="indexed-repeat( /fip_phase_1_test/farmer_fip/fip_recoms/est_budget ,  /fip_phase_1_test/farmer_fip , index()) *  /fip_phase_1_test/farm_size " nodeset="/fip_phase_1_test/fip_summary/tot_budget_row_unformatted" type="string"/>
+      <bind calculate="format-number(indexed-repeat( /fip_phase_1_test/farmer_fip/fip_recoms/est_budget ,  /fip_phase_1_test/farmer_fip , index()) *  /fip_phase_1_test/farm_size )" nodeset="/fip_phase_1_test/fip_summary/tot_budget_row" type="string"/>
+      <bind calculate="format-date-time(indexed-repeat( /fip_phase_1_test/farmer_fip/fip_recoms/start_month ,  /fip_phase_1_test/farmer_fip , index()), '%b-%Y')" nodeset="/fip_phase_1_test/fip_summary/start_month_row" type="string"/>
+      <bind calculate="format-date-time(indexed-repeat( /fip_phase_1_test/farmer_fip/fip_recoms/end_month ,  /fip_phase_1_test/farmer_fip , index()), '%b-%Y')" nodeset="/fip_phase_1_test/fip_summary/end_month_row" type="string"/>
+      <bind calculate="index()" nodeset="/fip_phase_1_test/fip_summary/recom_count" type="string"/>
+      <bind nodeset="/fip_phase_1_test/fip_summary/tot_est_budget_header" original="note" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/fip_summary/summary_row_note" original="note" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/fip_summary/committed" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="format-number(sum-if( /fip_phase_1_test/fip_summary/tot_budget_row_unformatted ,  /fip_phase_1_test/fip_summary/committed  = 1))" nodeset="/fip_phase_1_test/tot_est_budget_from_recoms" type="string"/>
+      <bind nodeset="/fip_phase_1_test/total_est_budget" original="note" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/fip_phase_1_test/farmer_signature" required="false()" type="binary"/>
+      <bind nodeset="/fip_phase_1_test/farmer_photo" relevant=" /fip_phase_1_test/farmer_signature  = ''" required="true()" type="binary"/>
+      <bind jr:requiredMsg="The signature of the field staff conducting the data collection is required." nodeset="/fip_phase_1_test/enumerator_signature" required="true()" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/fip_phase_1_test/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/fip_phase_1_test/intronote">
+      <label ref="jr:itext('/fip_phase_1_test/intronote:label')"/>
+    </input>
+    <group ref="/fip_phase_1_test/geographic_levels">
+      <label ref="jr:itext('/fip_phase_1_test/geographic_levels:label')"/>
+      <input appearance="invisible" calculate="1" ref="/fip_phase_1_test/geographic_levels/country_level"/>
+      <select1 appearance="search('full_geographic_level_dataset', 'matches', 'level',  /fip_phase_1_test/geographic_levels/country_level )" ref="/fip_phase_1_test/geographic_levels/country">
+        <label ref="jr:itext('/fip_phase_1_test/geographic_levels/country:label')"/>
+        <item>
+          <label>level_name</label>
+          <value>country_id</value>
+        </item>
+      </select1>
+      <input appearance="invisible" calculate="2" ref="/fip_phase_1_test/geographic_levels/district_level"/>
+      <select1 appearance="search('full_geographic_level_dataset', 'matches', 'level',  /fip_phase_1_test/geographic_levels/district_level , 'country_id',  /fip_phase_1_test/geographic_levels/country )" ref="/fip_phase_1_test/geographic_levels/district_coop_id">
+        <label ref="jr:itext('/fip_phase_1_test/geographic_levels/district_coop_id:label')"/>
+        <item>
+          <label>level_name</label>
+          <value>district_coop_id</value>
+        </item>
+      </select1>
+      <input appearance="invisible" calculate="3" ref="/fip_phase_1_test/geographic_levels/community_level"/>
+      <input appearance="invisible" calculate="concat( /fip_phase_1_test/geographic_levels/country_level , '_',  /fip_phase_1_test/geographic_levels/country , '_', /fip_phase_1_test/geographic_levels/district_coop_id )" ref="/fip_phase_1_test/geographic_levels/district_coop_desc"/>
+      <input appearance="invisible" calculate="concat( /fip_phase_1_test/geographic_levels/country_level , '_',  /fip_phase_1_test/geographic_levels/country , '_',  /fip_phase_1_test/geographic_levels/community_level )" ref="/fip_phase_1_test/geographic_levels/community_desc"/>
+      <select1 appearance="search('full_geographic_level_dataset', 'matches','level',  /fip_phase_1_test/geographic_levels/community_level , 'district_coop_desc',  /fip_phase_1_test/geographic_levels/district_coop_desc )" ref="/fip_phase_1_test/geographic_levels/community_id">
+        <label ref="jr:itext('/fip_phase_1_test/geographic_levels/community_id:label')"/>
+        <item>
+          <label>level_name</label>
+          <value>community_id</value>
+        </item>
+      </select1>
+      <input appearance="invisible" calculate="4" ref="/fip_phase_1_test/geographic_levels/society_level"/>
+      <input appearance="invisible" calculate="concat( /fip_phase_1_test/geographic_levels/country_level , '_',  /fip_phase_1_test/geographic_levels/country , '_',  /fip_phase_1_test/geographic_levels/district_coop_id , '_',  /fip_phase_1_test/geographic_levels/community_id )" ref="/fip_phase_1_test/geographic_levels/society_desc"/>
+      <select1 appearance="search('full_geographic_level_dataset', 'matches', 'level',  /fip_phase_1_test/geographic_levels/society_level , 'society_desc',  /fip_phase_1_test/geographic_levels/society_desc )" ref="/fip_phase_1_test/geographic_levels/society_id">
+        <label ref="jr:itext('/fip_phase_1_test/geographic_levels/society_id:label')"/>
+        <item>
+          <label>level_name</label>
+          <value>level_id</value>
+        </item>
+      </select1>
+    </group>
+    <select1 appearance="search('farmers', 'matches', 'colcen_id',  /fip_phase_1_test/geographic_levels/society_id )" ref="/fip_phase_1_test/farmer_id">
+      <label ref="jr:itext('/fip_phase_1_test/farmer_id:label')"/>
+      <item>
+        <label>name</label>
+        <value>ID_key</value>
+      </item>
+    </select1>
+    <input appearance="invisible" calculate="pulldata('farmers', 'full_name', 'ID_key', /fip_phase_1_test/farmer_id  )" ref="/fip_phase_1_test/farmer_name"/>
+    <input appearance="0" ref="/fip_phase_1_test/farmer_recoms_note">
+      <label ref="jr:itext('/fip_phase_1_test/farmer_recoms_note:label')"/>
+      <hint ref="jr:itext('/fip_phase_1_test/farmer_recoms_note:hint')"/>
+    </input>
+    <group ref="/fip_phase_1_test/farmer_fip">
+      <label ref="jr:itext('/fip_phase_1_test/farmer_fip:label')"/>
+      <repeat appearance="table" jr:count=" /fip_phase_1_test/farmer_fip_count " nodeset="/fip_phase_1_test/farmer_fip">
+        <group appearance="field-list" ref="/fip_phase_1_test/farmer_fip/fip_recoms">
+          <label ref="jr:itext('/fip_phase_1_test/farmer_fip/fip_recoms:label')"/>
+          <input ref="/fip_phase_1_test/farmer_fip/fip_recoms/act_recom">
+            <label ref="jr:itext('/fip_phase_1_test/farmer_fip/fip_recoms/act_recom:label')"/>
+            <hint ref="jr:itext('/fip_phase_1_test/farmer_fip/fip_recoms/act_recom:hint')"/>
+          </input>
+          <input appearance="show_formatted" ref="/fip_phase_1_test/farmer_fip/fip_recoms/est_budget">
+            <label ref="jr:itext('/fip_phase_1_test/farmer_fip/fip_recoms/est_budget:label')"/>
+          </input>
+          <input appearance="month-year" ref="/fip_phase_1_test/farmer_fip/fip_recoms/start_month">
+            <label ref="jr:itext('/fip_phase_1_test/farmer_fip/fip_recoms/start_month:label')"/>
+          </input>
+          <input appearance="month-year" ref="/fip_phase_1_test/farmer_fip/fip_recoms/end_month">
+            <label ref="jr:itext('/fip_phase_1_test/farmer_fip/fip_recoms/end_month:label')"/>
+          </input>
+        </group>
+      </repeat>
+    </group>
+    <input ref="/fip_phase_1_test/farm_size">
+      <label ref="jr:itext('/fip_phase_1_test/farm_size:label')"/>
+    </input>
+    <group ref="/fip_phase_1_test/fip_summary">
+      <label ref="jr:itext('/fip_phase_1_test/fip_summary:label')"/>
+      <repeat appearance="field-list" jr:count=" /fip_phase_1_test/fip_summary_count " nodeset="/fip_phase_1_test/fip_summary">
+        <input ref="/fip_phase_1_test/fip_summary/tot_est_budget_header">
+          <label ref="jr:itext('/fip_phase_1_test/fip_summary/tot_est_budget_header:label')"/>
+          <hint ref="jr:itext('/fip_phase_1_test/fip_summary/tot_est_budget_header:hint')"/>
+        </input>
+        <input ref="/fip_phase_1_test/fip_summary/summary_row_note">
+          <label ref="jr:itext('/fip_phase_1_test/fip_summary/summary_row_note:label')"/>
+        </input>
+        <select1 ref="/fip_phase_1_test/fip_summary/committed">
+          <label ref="jr:itext('/fip_phase_1_test/fip_summary/committed:label')"/>
+          <item>
+            <label ref="jr:itext('/fip_phase_1_test/fip_summary/committed/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/fip_phase_1_test/fip_summary/committed/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+      </repeat>
+    </group>
+    <input ref="/fip_phase_1_test/total_est_budget">
+      <label ref="jr:itext('/fip_phase_1_test/total_est_budget:label')"/>
+      <hint ref="jr:itext('/fip_phase_1_test/total_est_budget:hint')"/>
+    </input>
+    <upload appearance="signature" mediatype="image/*" ref="/fip_phase_1_test/farmer_signature">
+      <label ref="jr:itext('/fip_phase_1_test/farmer_signature:label')"/>
+      <hint ref="jr:itext('/fip_phase_1_test/farmer_signature:hint')"/>
+    </upload>
+    <upload mediatype="image/*" ref="/fip_phase_1_test/farmer_photo">
+      <label ref="jr:itext('/fip_phase_1_test/farmer_photo:label')"/>
+      <hint ref="jr:itext('/fip_phase_1_test/farmer_photo:hint')"/>
+    </upload>
+    <upload appearance="signature" mediatype="image/*" ref="/fip_phase_1_test/enumerator_signature">
+      <label ref="jr:itext('/fip_phase_1_test/enumerator_signature:label')"/>
+      <hint ref="jr:itext('/fip_phase_1_test/enumerator_signature:hint')"/>
+    </upload>
+  </h:body>
+</h:html>

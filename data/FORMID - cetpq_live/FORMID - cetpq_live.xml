@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>CETPQ Live</h:title>
+    <model>
+      <instance>
+        <cetpq_live id="cetpq_live" version="2106040851">
+          <starttime/>
+          <endtime/>
+          <deviceid/>
+          <subscriberid/>
+          <simid/>
+          <devicephonenum/>
+          <username/>
+          <duration/>
+          <caseid/>
+          <rm_name/>
+          <welcome_note/>
+          <rm_district/>
+          <activity_date/>
+          <stage_id/>
+          <stage/>
+          <activity_id/>
+          <activity/>
+          <subactivity_id/>
+          <subactivity/>
+          <activitydetail_id/>
+          <activitydetail/>
+          <status_flag/>
+          <status/>
+          <rm_signature/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </cetpq_live>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/cetpq_live/starttime" publishable="true()" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/cetpq_live/endtime" publishable="true()" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/cetpq_live/deviceid" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/cetpq_live/subscriberid" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/cetpq_live/simid" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/cetpq_live/devicephonenum" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="username" nodeset="/cetpq_live/username" publishable="true()" type="string"/>
+      <bind calculate="duration()" nodeset="/cetpq_live/duration" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="caseid" nodeset="/cetpq_live/caseid" publishable="true()" type="string"/>
+      <bind calculate="pulldata('rm_districts', 'rm_name', 'rm_username',  /cetpq_live/username )" nodeset="/cetpq_live/rm_name" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_live/welcome_note" original="note" publishable="false()" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/cetpq_live/rm_district" publishable="true()" required="true()" type="select1"/>
+      <bind constraint="date(format-date-time(., '%Y-%m-%d')) &lt;= date(format-date-time(today(), '%Y-%m-%d'))" jr:constraintMsg="An activity date cannot be in the future, only today or an earlier date" nodeset="/cetpq_live/activity_date" publishable="true()" required="true()" type="date"/>
+      <bind nodeset="/cetpq_live/stage_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'Stage', 'StageID',  /cetpq_live/stage_id )" nodeset="/cetpq_live/stage" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_live/activity_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'Activity', 'ActivityID',  /cetpq_live/activity_id )" nodeset="/cetpq_live/activity" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_live/subactivity_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'SubActivity', 'SubActivityID',  /cetpq_live/subactivity_id )" nodeset="/cetpq_live/subactivity" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_live/activitydetail_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'Details', 'DetailsID',  /cetpq_live/activitydetail_id )" nodeset="/cetpq_live/activitydetail" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_live/status_flag" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="choice-label( /cetpq_live/status_flag ,  /cetpq_live/status_flag )" nodeset="/cetpq_live/status" publishable="true()" type="string"/>
+      <bind jr:requiredMsg="Enter your signature to confirm." nodeset="/cetpq_live/rm_signature" publishable="true()" required="true()" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cetpq_live/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="intro" ref="/cetpq_live/welcome_note">
+      <label>&lt;p&gt;&lt;span style=&quot;color: #008000;&quot;&gt;&lt;strong&gt;<output value=" /cetpq_live/rm_name "/>&lt;/strong&gt;&lt;/span&gt;, welcome to the &lt;span style=&quot;color: #ff0000;&quot;&gt;&lt;strong&gt;CETPQ Activity Reporting Tool&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</label>
+    </input>
+    <select1 appearance="search('rm_districts', 'matches', 'rm_username',  /cetpq_live/username )" ref="/cetpq_live/rm_district">
+      <label>Select District</label>
+      <item>
+        <label>district_name</label>
+        <value>district_id</value>
+      </item>
+    </select1>
+    <input ref="/cetpq_live/activity_date">
+      <label>Enter Activity Date</label>
+    </input>
+    <select1 appearance="search('rm_activities')" ref="/cetpq_live/stage_id">
+      <label>Select Stage</label>
+      <item>
+        <label>Stage</label>
+        <value>StageID</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'Stage',  /cetpq_live/stage )" ref="/cetpq_live/activity_id">
+      <label>Select Activity</label>
+      <item>
+        <label>Activity</label>
+        <value>ActivityID</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'ActivityID',  /cetpq_live/activity_id , 'StageID',  /cetpq_live/stage_id )" ref="/cetpq_live/subactivity_id">
+      <label>Select Sub-Activity</label>
+      <item>
+        <label>SubActivity</label>
+        <value>SubActivityID</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'SubActivityID',  /cetpq_live/subactivity_id , 'ActivityID',  /cetpq_live/activity_id )" ref="/cetpq_live/activitydetail_id">
+      <label>Select Activity Detail</label>
+      <item>
+        <label>Details</label>
+        <value>DetailsID</value>
+      </item>
+    </select1>
+    <select1 ref="/cetpq_live/status_flag">
+      <label>Enter Status of Activity</label>
+      <item>
+        <label>On-going</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Completed</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Not Started</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <upload appearance="signature" mediatype="image/*" ref="/cetpq_live/rm_signature">
+      <label>Enter Signature</label>
+    </upload>
+  </h:body>
+</h:html>

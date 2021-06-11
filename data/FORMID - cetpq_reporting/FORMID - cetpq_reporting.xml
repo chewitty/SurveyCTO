@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>CETPQ Reporting</h:title>
+    <model>
+      <submission action="https://digitalinsights.surveycto.com/submission" base64RsaPublicKey="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtI2DFARcBrLePUuXI+m3o6jjC2zlimmtXmBD+y6JZpwYgztFwZCW68RqUNnKhEu9+w8k1HlhTL3fW2ZK3g9m3ClSe55Cb86lo57QcIS4uSgZ2R0PoY6nNpWsdrW7HM/GXMpROrcJOZNTKSvq0Sc9hVua9E6C1kwLuqSXnFUr7ESZBBpaW3m0JN6FuvJ9gNUGA4bfJQ9XvqXYWfiaAKlinb60v+D85ekeqAGKwUMHsxs6T/O0+XePVB9Mc+t9yZOdlcDUh4c3GN0fA6IIt+Ia2HoqUkRzcSz2guVAunZwYJ8QDzU0YIg0GfELeHTRzL1nzf8YoUApHTIFXwFDymaanwIDAQAB" method="form-data-post"/>
+      <instance>
+        <cetpq_reporting id="cetpq_reporting" version="2105031925">
+          <starttime/>
+          <endtime/>
+          <deviceid/>
+          <subscriberid/>
+          <simid/>
+          <devicephonenum/>
+          <username/>
+          <duration/>
+          <caseid/>
+          <rm_name/>
+          <welcome_note/>
+          <rm_district/>
+          <activity_date/>
+          <activity_stage/>
+          <activity/>
+          <sub_activity/>
+          <activity_detail/>
+          <activity_status/>
+          <rm_signature/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </cetpq_reporting>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/cetpq_reporting/starttime" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/cetpq_reporting/endtime" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/cetpq_reporting/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/cetpq_reporting/subscriberid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/cetpq_reporting/simid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/cetpq_reporting/devicephonenum" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="username" nodeset="/cetpq_reporting/username" type="string"/>
+      <bind calculate="duration()" nodeset="/cetpq_reporting/duration" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="caseid" nodeset="/cetpq_reporting/caseid" type="string"/>
+      <bind calculate="pulldata('rm_dataset', 'name', 'username',  /cetpq_reporting/username )" nodeset="/cetpq_reporting/rm_name" type="string"/>
+      <bind nodeset="/cetpq_reporting/welcome_note" original="note" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/cetpq_reporting/rm_district" required="true()" type="select1"/>
+      <bind nodeset="/cetpq_reporting/activity_date" required="true()" type="date"/>
+      <bind nodeset="/cetpq_reporting/activity_stage" required="true()" type="select1"/>
+      <bind nodeset="/cetpq_reporting/activity" publishable="true()" required="true()" type="select1"/>
+      <bind nodeset="/cetpq_reporting/sub_activity" required="true()" type="select1"/>
+      <bind nodeset="/cetpq_reporting/activity_detail" required="true()" type="select1"/>
+      <bind nodeset="/cetpq_reporting/activity_status" required="true()" type="select1"/>
+      <bind jr:requiredMsg="Enter your signature to confirm." nodeset="/cetpq_reporting/rm_signature" required="true()" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cetpq_reporting/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="intro" ref="/cetpq_reporting/welcome_note">
+      <label>&lt;p&gt;&lt;span style=&quot;color: #008000;&quot;&gt;&lt;strong&gt;<output value=" /cetpq_reporting/rm_name "/>&lt;/strong&gt;&lt;/span&gt;, welcome to the &lt;span style=&quot;color: #ff0000;&quot;&gt;&lt;strong&gt;CETPQ Activity Reporting Tool&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</label>
+    </input>
+    <select1 appearance="search('rm_districts', 'matches', 'rm_username',  /cetpq_reporting/username )" ref="/cetpq_reporting/rm_district">
+      <label>Select District</label>
+      <item>
+        <label>district_name</label>
+        <value>district_id</value>
+      </item>
+    </select1>
+    <input ref="/cetpq_reporting/activity_date">
+      <label>Enter Activity Date</label>
+    </input>
+    <select1 appearance="search('rm_activities')" ref="/cetpq_reporting/activity_stage">
+      <label>Select Stage</label>
+      <item>
+        <label>Stage</label>
+        <value>Stage</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'Stage',  /cetpq_reporting/activity_stage )" ref="/cetpq_reporting/activity">
+      <label>Select Activity</label>
+      <item>
+        <label>Activity</label>
+        <value>Activity</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'Activity',  /cetpq_reporting/activity )" ref="/cetpq_reporting/sub_activity">
+      <label>Select Sub-Activity</label>
+      <item>
+        <label>Sub-Activities</label>
+        <value>Sub-Activities</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'Sub-Activities',  /cetpq_reporting/sub_activity )" ref="/cetpq_reporting/activity_detail">
+      <label>Select Activity Detail</label>
+      <item>
+        <label>Details</label>
+        <value>Details</value>
+      </item>
+    </select1>
+    <select1 ref="/cetpq_reporting/activity_status">
+      <label>Enter Status of Activity</label>
+      <item>
+        <label>On-going</label>
+        <value>On-going</value>
+      </item>
+      <item>
+        <label>Completed</label>
+        <value>Completed</value>
+      </item>
+    </select1>
+    <upload appearance="signature" mediatype="image/*" ref="/cetpq_reporting/rm_signature">
+      <label>Enter Signature</label>
+    </upload>
+  </h:body>
+</h:html>

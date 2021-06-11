@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="101530" id="hh_listing_2" instanceID="uuid:19b7e00d-a6f9-40ea-bf64-7e3d6ad0c0aa" isComplete="true" lastDurationOffset="1480545497269" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2016-12-03T17:51:41.000Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T08:11:44.000Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-03T17:50:00.000Z</starttime>
+  <endtime>2016-12-03T17:51:41.000Z</endtime>
+  <username>eastern_team</username>
+  <duration>101</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Rejoice_Simelinkosi</enumerator>
+  <province>Manicaland</province>
+  <district>Chimanimani</district>
+  <gps_location>-19.790086 32.902594 0.0 0.0</gps_location>
+  <consent>0</consent>
+  <on_consent>
+    <respondent_name/>
+    <address/>
+    <num_in_hh/>
+    <household_photo/>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:19b7e00d-a6f9-40ea-bf64-7e3d6ad0c0aa</instanceID>
+  </meta>
+</hh_listing_2>

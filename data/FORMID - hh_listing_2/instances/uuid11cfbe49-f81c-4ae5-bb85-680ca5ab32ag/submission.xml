@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="174650" id="hh_listing_2" instanceID="uuid:11cfbe49-f81c-4ae5-bb85-680ca5ab32ag" isComplete="true" lastDurationOffset="1480604156196" lastPosition="endOfForm" manifest="{&quot;binaries&quot;:{&quot;house2-1480604147281.JPG&quot;:&quot;instance(Household listing - round 1)/hh_listing_2/on_consent[1]/household_photo[1]&quot;}}" markedAsCompleteDate="2017-02-04T18:26:02.741Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T13:11:46.591Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-01T14:53:01.546Z</starttime>
+  <endtime>2016-12-01T14:55:56.182Z</endtime>
+  <username>eastern_team</username>
+  <duration>175</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Mercy_Wadzanai</enumerator>
+  <province>Manicaland</province>
+  <district>Mutare</district>
+  <gps_location>-18.994483937380256 32.63530786137392 0.0 0.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Nakai Anesu</respondent_name>
+    <address>26 Mazhambe Road</address>
+    <num_in_hh>11</num_in_hh>
+    <household_photo>house2-1480604147281.JPG</household_photo>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:11cfbe49-f81c-4ae5-bb85-680ca5ab32ag</instanceID>
+  </meta>
+</hh_listing_2>

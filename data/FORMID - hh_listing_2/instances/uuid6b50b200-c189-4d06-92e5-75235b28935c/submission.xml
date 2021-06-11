@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="340530" id="hh_listing_2" instanceID="uuid:6b50b200-c189-4d06-92e5-75235b28935c" isComplete="true" lastDurationOffset="1480545497269" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2016-12-02T15:23:40.000Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T08:11:26.000Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-02T15:18:00.000Z</starttime>
+  <endtime>2016-12-02T15:23:40.000Z</endtime>
+  <username>eastern_team</username>
+  <duration>340</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Johannah_Moyo</enumerator>
+  <province>Manicaland</province>
+  <district>Mutare</district>
+  <gps_location>-18.981775 32.381326 0.0 0.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Stellah Asd</respondent_name>
+    <address>43 Haplatha</address>
+    <num_in_hh>4</num_in_hh>
+    <household_photo/>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:6b50b200-c189-4d06-92e5-75235b28935c</instanceID>
+  </meta>
+</hh_listing_2>

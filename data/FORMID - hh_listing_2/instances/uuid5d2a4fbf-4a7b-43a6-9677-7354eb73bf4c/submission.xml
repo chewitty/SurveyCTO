@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="97530" id="hh_listing_2" instanceID="uuid:5d2a4fbf-4a7b-43a6-9677-7354eb73bf4c" isComplete="true" lastDurationOffset="1480545497269" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2016-12-02T13:33:37.000Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T08:11:39.000Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-02T13:32:00.000Z</starttime>
+  <endtime>2016-12-02T13:33:37.000Z</endtime>
+  <username>eastern_team</username>
+  <duration>97</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Mercy_Wadzanai</enumerator>
+  <province>Manicaland</province>
+  <district>Mutare</district>
+  <gps_location>-18.862695 32.594044 0.0 0.0</gps_location>
+  <consent>0</consent>
+  <on_consent>
+    <respondent_name/>
+    <address/>
+    <num_in_hh/>
+    <household_photo/>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:5d2a4fbf-4a7b-43a6-9677-7354eb73bf4c</instanceID>
+  </meta>
+</hh_listing_2>

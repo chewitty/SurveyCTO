@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="275665" id="hh_listing_2" instanceID="uuid:b340ca87-7a32-4498-97cc-fa33169e95f0" isComplete="true" lastDurationOffset="1480603978170" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2017-02-04T18:26:05.043Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T13:11:48.865Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-01T14:48:22.505Z</starttime>
+  <endtime>2016-12-01T14:52:58.160Z</endtime>
+  <username>eastern_team</username>
+  <duration>276</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Johannah_Moyo</enumerator>
+  <province>Manicaland</province>
+  <district>Mutare</district>
+  <gps_location>-19.001625649239454 32.63334342366181 0.0 0.0</gps_location>
+  <consent>0</consent>
+  <meta>
+    <instanceID>uuid:b340ca87-7a32-4498-97cc-fa33169e95f0</instanceID>
+  </meta>
+</hh_listing_2>

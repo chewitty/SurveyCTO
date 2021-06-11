@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>CETPQ Pilot</h:title>
+    <model>
+      <submission action="https://digitalinsights.surveycto.com/submission" base64RsaPublicKey="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtI2DFARcBrLePUuXI+m3o6jjC2zlimmtXmBD+y6JZpwYgztFwZCW68RqUNnKhEu9+w8k1HlhTL3fW2ZK3g9m3ClSe55Cb86lo57QcIS4uSgZ2R0PoY6nNpWsdrW7HM/GXMpROrcJOZNTKSvq0Sc9hVua9E6C1kwLuqSXnFUr7ESZBBpaW3m0JN6FuvJ9gNUGA4bfJQ9XvqXYWfiaAKlinb60v+D85ekeqAGKwUMHsxs6T/O0+XePVB9Mc+t9yZOdlcDUh4c3GN0fA6IIt+Ia2HoqUkRzcSz2guVAunZwYJ8QDzU0YIg0GfELeHTRzL1nzf8YoUApHTIFXwFDymaanwIDAQAB" method="form-data-post"/>
+      <instance>
+        <cetpq_pilot id="cetpq_pilot" version="2105141649">
+          <starttime/>
+          <endtime/>
+          <deviceid/>
+          <subscriberid/>
+          <simid/>
+          <devicephonenum/>
+          <username/>
+          <duration/>
+          <caseid/>
+          <rm_name/>
+          <welcome_note/>
+          <rm_district/>
+          <activity_date/>
+          <stage_id/>
+          <stage/>
+          <activity_id/>
+          <activity/>
+          <subactivity_id/>
+          <subactivity/>
+          <activitydetail_id/>
+          <activitydetail/>
+          <status_flag/>
+          <status/>
+          <rm_signature/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </cetpq_pilot>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/cetpq_pilot/starttime" publishable="true()" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/cetpq_pilot/endtime" publishable="true()" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/cetpq_pilot/deviceid" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/cetpq_pilot/subscriberid" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/cetpq_pilot/simid" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/cetpq_pilot/devicephonenum" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="username" nodeset="/cetpq_pilot/username" publishable="true()" type="string"/>
+      <bind calculate="duration()" nodeset="/cetpq_pilot/duration" publishable="true()" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="caseid" nodeset="/cetpq_pilot/caseid" publishable="true()" type="string"/>
+      <bind calculate="pulldata('rm_districts', 'rm_name', 'rm_username',  /cetpq_pilot/username )" nodeset="/cetpq_pilot/rm_name" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_pilot/welcome_note" original="note" publishable="false()" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/cetpq_pilot/rm_district" publishable="true()" required="true()" type="select1"/>
+      <bind nodeset="/cetpq_pilot/activity_date" publishable="true()" required="true()" type="date"/>
+      <bind nodeset="/cetpq_pilot/stage_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'Stage', 'StageID',  /cetpq_pilot/stage_id )" nodeset="/cetpq_pilot/stage" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_pilot/activity_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'Activity', 'ActivityID',  /cetpq_pilot/activity_id )" nodeset="/cetpq_pilot/activity" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_pilot/subactivity_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'SubActivity', 'SubActivityID',  /cetpq_pilot/subactivity_id )" nodeset="/cetpq_pilot/subactivity" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_pilot/activitydetail_id" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="pulldata('rm_activities', 'Details', 'DetailsID',  /cetpq_pilot/activitydetail_id )" nodeset="/cetpq_pilot/activitydetail" publishable="true()" type="string"/>
+      <bind nodeset="/cetpq_pilot/status_flag" publishable="true()" required="true()" type="select1"/>
+      <bind calculate="choice-label( /cetpq_pilot/status_flag ,  /cetpq_pilot/status_flag )" nodeset="/cetpq_pilot/status" publishable="true()" type="string"/>
+      <bind jr:requiredMsg="Enter your signature to confirm." nodeset="/cetpq_pilot/rm_signature" publishable="true()" required="true()" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cetpq_pilot/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="intro" ref="/cetpq_pilot/welcome_note">
+      <label>&lt;p&gt;&lt;span style=&quot;color: #008000;&quot;&gt;&lt;strong&gt;<output value=" /cetpq_pilot/rm_name "/>&lt;/strong&gt;&lt;/span&gt;, welcome to the &lt;span style=&quot;color: #ff0000;&quot;&gt;&lt;strong&gt;CETPQ Activity Reporting Tool&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</label>
+    </input>
+    <select1 appearance="search('rm_districts', 'matches', 'rm_username',  /cetpq_pilot/username )" ref="/cetpq_pilot/rm_district">
+      <label>Select District</label>
+      <item>
+        <label>district_name</label>
+        <value>district_id</value>
+      </item>
+    </select1>
+    <input ref="/cetpq_pilot/activity_date">
+      <label>Enter Activity Date</label>
+    </input>
+    <select1 appearance="search('rm_activities')" ref="/cetpq_pilot/stage_id">
+      <label>Select Stage</label>
+      <item>
+        <label>Stage</label>
+        <value>StageID</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'Stage',  /cetpq_pilot/stage )" ref="/cetpq_pilot/activity_id">
+      <label>Select Activity</label>
+      <item>
+        <label>Activity</label>
+        <value>ActivityID</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'ActivityID',  /cetpq_pilot/activity_id , 'StageID',  /cetpq_pilot/stage_id )" ref="/cetpq_pilot/subactivity_id">
+      <label>Select Sub-Activity</label>
+      <item>
+        <label>SubActivity</label>
+        <value>SubActivityID</value>
+      </item>
+    </select1>
+    <select1 appearance="search('rm_activities', 'matches', 'SubActivityID',  /cetpq_pilot/subactivity_id , 'ActivityID',  /cetpq_pilot/activity_id )" ref="/cetpq_pilot/activitydetail_id">
+      <label>Select Activity Detail</label>
+      <item>
+        <label>Details</label>
+        <value>DetailsID</value>
+      </item>
+    </select1>
+    <select1 ref="/cetpq_pilot/status_flag">
+      <label>Enter Status of Activity</label>
+      <item>
+        <label>On-going</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Completed</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Not Started</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <upload appearance="signature" mediatype="image/*" ref="/cetpq_pilot/rm_signature">
+      <label>Enter Signature</label>
+    </upload>
+  </h:body>
+</h:html>

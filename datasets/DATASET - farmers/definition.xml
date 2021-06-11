@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset>
+    <definition>
+        <id>farmers</id>
+        <title>Farmers</title>
+        <datasetType>SERVER</datasetType>
+        <fieldNames>ID_key,colcen_desc,full_name,colcen_id,mobile_num,farm_units,name,national_id,comm_desc,idproducer,country_id</fieldNames>
+        <formLinks>
+            <formLink>
+                <formId>farmer_diagnostics</formId>
+            </formLink>
+            <formLink>
+                <formId>fip_phase_1</formId>
+            </formLink>
+            <formLink>
+                <formId>farmer_diagnostics_backup</formId>
+            </formLink>
+            <formLink>
+                <formId>fip_phase_2_test</formId>
+            </formLink>
+        </formLinks>
+        <dataLinks/>
+    </definition>
+    <instance>
+        <version>16</version>
+    </instance>
+</dataset>

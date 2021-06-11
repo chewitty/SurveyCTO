@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 durationMillis="145237" id="hh_listing_2" instanceID="uuid:113acc7b-d8c2-4873-960f-317d1b1963aa" isComplete="true" lastDurationOffset="1613214777393" lastPosition="endOfForm" manifest="{&quot;binaries&quot;:{&quot;capture-1613214731942.jpg&quot;:&quot;/hh_listing_2/on_consent[1]/household_photo[1]&quot;}}" markedAsCompleteDate="2021-02-13T11:12:57.413Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2021-02-13T11:12:57.413Z" ta_lastViewedFieldTimestamp="0" validated="false" version="1710070852" xmlns="http://opendatakit.org/submissions">
+  <starttime>2021-02-13T11:10:32.156Z</starttime>
+  <endtime>2021-02-13T11:12:57.393Z</endtime>
+  <username>ferdinand.che@gmail.com</username>
+  <duration>145</duration>
+  <enumerator_team>northern</enumerator_team>
+  <enumerator>Flic_Moreshah</enumerator>
+  <province>Manicaland</province>
+  <district>Buhera</district>
+  <gps_location>41.3597696 2.1364736 0.0 81007.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Fred Che</respondent_name>
+    <address>Carrer Antoni Gaudi</address>
+    <num_in_hh>6</num_in_hh>
+    <household_photo>capture-1613214731942.jpg</household_photo>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:113acc7b-d8c2-4873-960f-317d1b1963aa</instanceID>
+  </meta>
+</hh_listing_2>

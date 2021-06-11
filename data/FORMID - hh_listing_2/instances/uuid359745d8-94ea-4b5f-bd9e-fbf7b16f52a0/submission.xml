@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="315530" id="hh_listing_2" instanceID="uuid:359745d8-94ea-4b5f-bd9e-fbf7b16f52a0" isComplete="true" lastDurationOffset="1480545497269" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2016-12-03T12:31:15.000Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T08:11:47.000Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-03T12:26:00.000Z</starttime>
+  <endtime>2016-12-03T12:31:15.000Z</endtime>
+  <username>eastern_team</username>
+  <duration>315</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Rejoice_Simelinkosi</enumerator>
+  <province>Manicaland</province>
+  <district>Chimanimani</district>
+  <gps_location>-19.790485 32.889254 0.0 0.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Emily Jagger</respondent_name>
+    <address>75 Tongagara</address>
+    <num_in_hh>4</num_in_hh>
+    <household_photo/>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:359745d8-94ea-4b5f-bd9e-fbf7b16f52a0</instanceID>
+  </meta>
+</hh_listing_2>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data encrypted="yes" id="cetpq_pilot" instanceID="uuid:754e2f98-03e5-482e-bab3-b8b52d3f2622" isComplete="true" markedAsCompleteDate="2021-05-17T13:16:26.607Z" submissionDate="2021-05-17T13:16:26.607Z" version="2105141649" xmlns="http://opendatakit.org/submissions">
+  <base64EncryptedKey>hAKKfZYSJAB78Tl9Yautvb6hAa7mzbKNNpE2aq3XAIwqf57kUuiTyiXE55nhuD7iZz042Pqux4iQiywSaSWMWMglXfitgcp34s4d0yWQXIoEG+jCOab6K94sMDKsegCt2x7l5tf2fK8gT/0na1KoH/xVEbUchuJjQmt0z1fGW6JKFAF4m1f0UcPfrFdr4Jf38v7TUc4AgzA2s887WxJIdHMOAnhp7W14O95zg86D/xIfmT+Q9cWmqVjLaZaabg0vG8u2FaySZYh4H6PNqPuB5or0dhBh+qzlmRjasXEYHAbExhLW8acZQYrxyZNiJJMe0PwkbPa0GR0Yx1r4uU8lCA==</base64EncryptedKey>
+  <orx:meta xmlns:orx="http://openrosa.org/xforms">
+    <orx:instanceID>uuid:754e2f98-03e5-482e-bab3-b8b52d3f2622</orx:instanceID>
+  </orx:meta>
+  <media>
+    <file>1621257362480.jpg.enc</file>
+  </media>
+  <encryptedXmlFile>submission.xml.enc</encryptedXmlFile>
+  <base64EncryptedElementSignature>N5UOjjh9gKKXhgyI4uEZDScpGM67Txc9ohypWuqwwKMxpCFJmkBPMCWvTz8zIMIxCin+6q+lp0qQ+7HHQJYTLzFlMpPkOY0sdeVjTazpkbtzZrFuwQvkO43wuSnjrT9OHwaWjGV0WznGREMcsvFVeyzsaIdIzollkF4Lnp2lXNSnCwt1wVyqMu7pGiOO9YEVp6eXFmdHvICjlIQ04BMu1ReTbq2ojEy2YrAJIsYwdAzYSdB6bAYkbynLnyuebUlldKhLfmtmNQueGOl9+rztptnQRwjpZGd5y3zS6Z44t0b0XWZ7MN8PLfNNZ1u+2KNPecOmuh7RSflA7XUlWSvwYQ==</base64EncryptedElementSignature>
+</data>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hh_listing_2 xmlns="http://opendatakit.org/submissions" durationMillis="320530" id="hh_listing_2" instanceID="uuid:142efc38-1d16-4780-b1ba-312af361bf2b" isComplete="true" lastDurationOffset="1480545497269" lastPosition="endOfForm" manifest="" markedAsCompleteDate="2016-12-03T15:14:20.000Z" speedAuditedFields="" speed_lastViewedFieldTimestamp="0" submissionDate="2017-02-04T08:11:23.000Z" ta_lastViewedFieldTimestamp="0" version="1611301717">
+  <starttime>2016-12-03T15:09:00.000Z</starttime>
+  <endtime>2016-12-03T15:14:20.000Z</endtime>
+  <username>eastern_team</username>
+  <duration>320</duration>
+  <enumerator_team>eastern</enumerator_team>
+  <enumerator>Johannah_Moyo</enumerator>
+  <province>Manicaland</province>
+  <district>Mutare</district>
+  <gps_location>-19.035754 32.598841 0.0 0.0</gps_location>
+  <consent>1</consent>
+  <on_consent>
+    <respondent_name>Roselin Tendai</respondent_name>
+    <address>43 Chingweza</address>
+    <num_in_hh>6</num_in_hh>
+    <household_photo/>
+  </on_consent>
+  <meta>
+    <instanceID>uuid:142efc38-1d16-4780-b1ba-312af361bf2b</instanceID>
+  </meta>
+</hh_listing_2>
