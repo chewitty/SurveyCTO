@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset>
+    <definition>
+        <id>rm_districts</id>
+        <title>RM Data</title>
+        <datasetType>SERVER</datasetType>
+        <fieldNames>rm_username,rm_name,team,district_id,district_name</fieldNames>
+        <formLinks>
+            <formLink>
+                <formId>cetpq_reporting</formId>
+            </formLink>
+            <formLink>
+                <formId>cetpq_pilot</formId>
+            </formLink>
+            <formLink>
+                <formId>cetpq_live</formId>
+            </formLink>
+        </formLinks>
+        <dataLinks/>
+    </definition>
+    <instance>
+        <version>1</version>
+    </instance>
+</dataset>
