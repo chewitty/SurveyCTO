@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset>
+    <definition>
+        <id>fip_recommendations</id>
+        <title>FIP Recommendations</title>
+        <datasetType>SERVER</datasetType>
+        <fieldNames>rid,recommendation,recommendation_fr</fieldNames>
+        <formLinks>
+            <formLink>
+                <formId>fip_phase_2_test</formId>
+            </formLink>
+            <formLink>
+                <formId>fip_phase_1</formId>
+            </formLink>
+        </formLinks>
+        <dataLinks/>
+    </definition>
+    <instance>
+        <version>1</version>
+    </instance>
+</dataset>

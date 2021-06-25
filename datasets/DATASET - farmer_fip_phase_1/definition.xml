@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset>
+    <definition>
+        <id>farmer_fip_phase_1</id>
+        <title>Farmer FIP Phase 1</title>
+        <datasetType>SERVER</datasetType>
+        <fieldNames>farmer_id,country_id,district_coop_id,community_id,society_id,submission_date,submitted_by,visit_num,recoms,recom_id_1,est_budget_1,start_month_1,end_month_1,recom_id_2,est_budget_2,start_month_2,end_month_2,recom_id_3,est_budget_3,start_month_3,end_month_3,recom_id_4,est_budget_4,start_month_4,end_month_4,recom_id_5,est_budget_5,start_month_5,end_month_5,recom_id_6,est_budget_6,start_month_6,end_month_6,recom_id_7,est_budget_7,start_month_7,end_month_7,recom_id_8,est_budget_8,start_month_8,end_month_8,recom_id_9,est_budget_9,start_month_9,end_month_9,recom_id_10,est_budget_10,start_month_10,end_month_10,recom_id_11,est_budget_11,start_month_11,end_month_11,recom_id_12,est_budget_12,start_month_12,end_month_12,recom_id_13,est_budget_13,start_month_13,end_month_13,recom_id_14,est_budget_14,start_month_14,end_month_14,recom_id_15,est_budget_15,start_month_15,end_month_15,recom_id_16,est_budget_16,start_month_16,end_month_16,recom_id_17,est_budget_17,start_month_17,end_month_17,recom_id_18,est_budget_18,start_month_18,end_month_18,recom_id_19,est_budget_19,start_month_19,end_month_19,farm_size</fieldNames>
+        <formLinks>
+            <formLink>
+                <formId>fip_phase_2_test</formId>
+            </formLink>
+        </formLinks>
+        <dataLinks/>
+    </definition>
+    <instance>
+        <version>1</version>
+    </instance>
+</dataset>

@@ -10,7 +10,7 @@
                 <formId>fip_phase_1</formId>
             </formLink>
             <formLink>
-                <formId>fip_test_2</formId>
+                <formId>fip_phase_2_test</formId>
             </formLink>
         </formLinks>
         <dataLinks/>

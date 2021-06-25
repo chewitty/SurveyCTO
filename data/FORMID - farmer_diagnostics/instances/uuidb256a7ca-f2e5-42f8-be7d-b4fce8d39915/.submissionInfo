@@ -1,1 +1,1 @@
-{"reviewStatus":"NONE","approvalMethod":null,"classTag":null}
+{"reviewStatus":"APPROVED","approvalMethod":"APPROVE-ALL","classTag":null,"reviews":[{"id":1293,"instanceId":"uuid:b256a7ca-f2e5-42f8-be7d-b4fce8d39915","creationDate":1624449545000,"username":"daniel.kouakou@ecomtrading.com","statusUpdate":"APPROVED","classTagUpdate":null,"fieldUpdates":[],"comments":[{"id":1294,"creationDate":1624449545000,"text":"[ Submission approved with approve-all. ]","encrypted":false,"type":"SYSTEM","fieldId":null,"fieldUpdateId":null}],"format":"2.40"}],"latestReviewDate":1624449545000}
