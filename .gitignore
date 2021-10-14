@@ -1,3 +1,7 @@
 # Exclude IntelliJ files
 *.iml
 .idea/
+data/
+export/media/
+logs/
+datasets/
